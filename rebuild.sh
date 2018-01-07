@@ -15,4 +15,7 @@ cd ~/Downloads &&
 # oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-
+mkdir ~/.ssh
+sudo cp -r /old_hd/home/ecowan/.ssh/* ~/.ssh
+sudo chmod -R 400 ~/.ssh/*
+echo "ssh-add ~/.ssh/*" > ~/.zshrc
