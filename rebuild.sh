@@ -2,13 +2,19 @@
 
 sudo apt install -y zsh git python3-pip emacs htop openssh-server
 sudo pip3 install virtualenv
+sudo snap install heroku --classic
 
 cd ~/Downloads &&
     wget "https://download.jetbrains.com/idea/ideaIU-2017.3.2.tar.gz" &&
-    tar xfz ideaIU-2017.3.2.tar.gz
+    tar xfz ideaIU-2017.3.2.tar.gz &&
     gvfs-trash ideaIU-2017.3.2.tar.gz &&
     mkdir ~/Applications &&
     mv ideaIU-2017.3.2/ ~/Applications &&
+
+    wget "https://download.jetbrains.com/datagrip/datagrip-2017.3.3.tar.gz" &&
+    tar xfz datagrip-2017.3.3.tar.gz &&
+    gvfs-trash datagrip-2017.3.3.tar.gz &&
+    mv datagrip-2017.3.3.tar.gz ~/Applications &&
     cd ~
 
 
