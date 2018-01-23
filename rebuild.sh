@@ -20,6 +20,7 @@ cd ~/Downloads &&
 
 # oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+echo `PROMPT="$fg[cyan]%}$USER@%{$fg[blue]%}%m ${PROMPT}"` >> ~/.zshrc
 
 mkdir ~/.ssh
 sudo cp -r /old_hd/home/ecowan/.ssh/* ~/.ssh
